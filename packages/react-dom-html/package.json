@@ -25,10 +25,11 @@
         "postbuild:lib": "cp ./src/exports/* ./lib/",
         "lint": "eslint ./src",
         "ci-jest":
-            "TEST_REPORT_PATH=./.build/test jest --ci --coverage --coverageDirectory ./.build/coverage --testResultsProcessor='../../node_modules/jest-junit-reporter'",
+            "TEST_REPORT_PATH=./.build/coverage/jest jest --ci --coverage --coverageDirectory ./.build/coverage/jest --testResultsProcessor='../../node_modules/jest-junit-reporter'",
         "ci-lint": "eslint ./src --format junit --output-file ./.build/lint/eslint.xml",
         "preci-test": "yarn run build",
-        "ci-test": "yarn run ci-jest&& yarn run test:browser",
+        "ci-test": "yarn run ci-jest && yarn run test:browser",
+        "postci-test": "yarn run mergeCoverageReports",
         "pretest": "yarn run clean && yarn run build",
         "test": "yarn run test:server && yarn run test:browser",
         "posttest": "yarn run mergeCoverageReports",
@@ -38,7 +39,7 @@
         "posttest:browser":
             "istanbul report --root ./.build/coverage/karma/json --dir ./.build/coverage/karma lcov text",
         "mergeCoverageReports":
-            "../../node_modules/.bin/junit-merge ./.build/coverage/karma/junit/karma-results.xml ./.build/coverage/jest-test-report.xml -o ./.build/coverage/merged-results.xml"
+            "../../node_modules/.bin/junit-merge ./.build/coverage/karma/junit/karma-results.xml ./.build/coverage/jest/test-report.xml -o ./.build/coverage/merged-results.xml"
     },
     "keywords": ["react", "react-dom", "html", "react-dom-html"],
     "devDependencies": {

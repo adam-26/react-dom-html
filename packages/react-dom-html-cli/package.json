@@ -20,13 +20,10 @@
         "precommit": "pretty-quick --staged",
         "lint": "eslint ./src",
         "ci-jest":
-            "TEST_REPORT_PATH=./.build/test jest --ci --coverage --coverageDirectory ./.build/coverage --testResultsProcessor='../../node_modules/jest-junit-reporter'",
+            "TEST_REPORT_PATH=./.build/coverage TEST_REPORT_FILENAME=test-report.xml jest --runInBand --ci --coverage --coverageDirectory ./.build/coverage --testResultsProcessor='../../node_modules/jest-junit-reporter'",
         "ci-lint": "eslint ./src --format junit --output-file ./.build/lint/eslint.xml",
         "ci-test": "yarn run ci-jest",
-        "postci-test": "yarn run moveTestReport",
-        "moveTestReport": "mkdir -p ./.build/coverage && cp ./test-report.xml ./.build/coverage/jest-test-report.xml",
         "test": "jest --runInBand",
-        "posttest": "yarn run moveTestReport",
         "build": "echo 'nothing to build'"
     },
     "keywords": [

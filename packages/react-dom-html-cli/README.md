@@ -84,6 +84,7 @@ export default {
 ```
 
 _You need to have `.babelrc` configured for React (or JSX) before running the cli template generator_
+See `demo/.babelrc` for an example.
 
 2.  Run the cli executable
 
