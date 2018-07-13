@@ -5,15 +5,16 @@ const CliTest = require("command-line-test");
 describe("react-dom-html-cli", () => {
     describe("HTML template", () => {
         test("generates a html file", done => {
+            const CWD = path.resolve(__dirname, "..", "..");
             const cliTest = new CliTest({
-                cwd: path.resolve(__dirname, "..", ".."),
+                cwd: CWD,
                 env: process.env
             });
 
             cliTest.exec(
                 [
                     process.execPath,
-                    "src/react-dom-html.js",
+                    CWD + "/src/react-dom-html.js",
                     "generateHtml",
                     "demo/reactDomHtmlTemplate.js",
                     "demo/htmlGenerated.html"
@@ -31,15 +32,16 @@ describe("react-dom-html-cli", () => {
 
     describe("HTML API", () => {
         test("generates a html file", done => {
+            const CWD = path.resolve(__dirname, "..", "..");
             const cliTest = new CliTest({
-                cwd: path.resolve(__dirname, "..", ".."),
+                cwd: CWD,
                 env: process.env
             });
 
             cliTest.exec(
                 [
                     process.execPath,
-                    "src/react-dom-html.js",
+                    CWD + "/src/react-dom-html.js",
                     "generateHtml",
                     "demo/reactDomHtmlApi.js",
                     "demo/apiGenerated.html"
