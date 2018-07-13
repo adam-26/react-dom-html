@@ -55,8 +55,16 @@ jobs:
 
             # Run the tests
             yarn wsrun build --stages --exclude react-dom-html-tags
-            yarn wsrun ci-test --stages --exclude react-dom-html-tags
+
+            # wsrun + 'command-line-test' cause unexpected side-effects when testing, for now do it manually
+            # yarn wsrun ci-test --stages --exclude react-dom-html-tags
+            cd packages/react-dom-html-cli
+            yarn ci-test
+            cd ../..
+            cd packages/react-dom-html
+            yarn ci-test
             COVERAGE_EXIT_CODE=$?
+            cd ../..
 
             # Copy the coverage file for reporting purposes
             cp -r ./react-dom-html/.build/coverage/. ./coverage/
