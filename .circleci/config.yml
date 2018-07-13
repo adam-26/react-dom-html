@@ -119,7 +119,7 @@ jobs:
               # TODO: to include 'react-dom-html-tags' in build, REMOVE the package.json 'private: true' field
               #       and, remove all EXCLUDE options from this file
               yarn wsrun build --stages --exclude react-dom-html-tags
-              yarn wsrun publish --stages --exclude react-dom-html-tags
+              # yarn wsrun publish --stages --exclude react-dom-html-tags
 
               # Tag the release, update package.json version and changelog, commit and push to github.
               yarn scripts/publish.js
