@@ -25,7 +25,7 @@
         "postbuild:lib": "cp ./src/exports/* ./lib/",
         "lint": "eslint ./src",
         "ci-jest":
-            "TEST_REPORT_PATH=./.build/test jest --ci --coverage --coverageDirectory ./.build/coverage --testResultsProcessor='./node_modules/jest-junit-reporter'",
+            "TEST_REPORT_PATH=./.build/test jest --ci --coverage --coverageDirectory ./.build/coverage --testResultsProcessor='../../node_modules/jest-junit-reporter'",
         "ci-lint": "eslint ./src --format junit --output-file ./.build/lint/eslint.xml",
         "preci-test": "yarn run build",
         "ci-test": "yarn run ci-jest&& yarn run test:browser",

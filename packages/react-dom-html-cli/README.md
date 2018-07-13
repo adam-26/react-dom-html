@@ -2,7 +2,6 @@
 
 > Generate .html files from react-dom-html templates
 
-TODO Update BADGES - workspace support?
 [![npm](https://img.shields.io/npm/v/react-dom-html.svg)](https://www.npmjs.com/package/react-dom-html)
 [![npm](https://img.shields.io/npm/dm/react-dom-html.svg)](https://www.npmjs.com/package/react-dom-html)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/adam-26/react-dom-html/master.svg)](https://circleci.com/gh/adam-26/react-dom-html/tree/master)
