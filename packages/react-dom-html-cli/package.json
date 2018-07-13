@@ -1,0 +1,70 @@
+{
+    "name": "react-dom-html-cli",
+    "version": "1.0.0",
+    "description": "react-dom-html cli utility to generate html files",
+    "repository": "git@github.com:adam-26/react-dom-html.git",
+    "author": "Adam <adam-26@users.noreply.github.com>",
+    "bugs": {
+        "url": "https://github.com/adam-26/react-dom-html/issues"
+    },
+    "homepage": "https://github.com/adam-26/react-dom-html/packages/react-dom-html-cli",
+    "license": "MIT",
+    "bin": {
+        "react-dom-html": "./src/react-dom-html.js"
+    },
+    "engines": {
+        "node": ">=4.8"
+    },
+    "scripts": {
+        "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+        "precommit": "pretty-quick --staged",
+        "lint": "eslint ./src",
+        "ci-jest":
+            "TEST_REPORT_PATH=./.build/test jest --ci --coverage --coverageDirectory ./.build/coverage --testResultsProcessor='./node_modules/jest-junit-reporter'",
+        "ci-lint": "eslint ./src --format junit --output-file ./.build/lint/eslint.xml",
+        "ci-test": "yarn run ci-jest",
+        "postci-test": "yarn run moveTestReport",
+        "moveTestReport": "mkdir -p ./.build/coverage && cp ./test-report.xml ./.build/coverage/jest-test-report.xml",
+        "test": "jest --runInBand",
+        "posttest": "yarn run moveTestReport",
+        "build": "echo 'nothing to build'"
+    },
+    "keywords": [
+        "react",
+        "react-dom",
+        "html",
+        "react-dom-html",
+        "react-dom-html-cli",
+        "html templates"
+    ],
+    "devDependencies": {
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "command-line-test": "^1.0.10",
+        "cross-env": "^5.1.4",
+        "eslint": "^4.12.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-flowtype": "^2.46.2",
+        "eslint-plugin-jest": "^21.4.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-promise": "^3.7.0",
+        "eslint-plugin-react": "^7.7.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "flow-bin": "^0.69.0",
+        "jest": "^22.4.3",
+        "jest-junit-reporter": "^1.1.0",
+        "standard-version": "^4.2.0"
+    },
+    "dependencies": {
+        "babel-register": "^6.26.0",
+        "commander": "^2.15.1"
+    },
+    "jest": {
+        "verbose": true,
+        "collectCoverage": false,
+        "testMatch": ["**/__tests__/*.test.js?(x)"],
+        "coveragePathIgnorePatterns": ["/node_modules/", "/src/__tests__/reactSixteenAdapter.js"],
+        "testResultsProcessor": "../../node_modules/jest-junit-reporter"
+    }
+}

@@ -1,0 +1,29 @@
+
+engines:
+
+  fixme:
+    enabled: true
+
+  nodesecurity:
+    enabled: true
+
+  eslint:
+    enabled: true
+    channel: "eslint-3"
+
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript:
+
+ratings:
+  paths:
+  - "packages/react-dom-html/src/*.js"
+  - "packages/react-dom-html-cli/src/*.js"
+#  - "packages/react-dom-html-tags/src/*.js"
+
+exclude_paths:
+- "packages/react-dom-html/src/__tests__/*.js"
+- "packages/react-dom-html-cli/src/__tests__/*.js"
+- "packages/react-dom-html-tags/src/__tests__/*.js"

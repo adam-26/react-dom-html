@@ -1,0 +1,13 @@
+.DS_Store
+.eslintcache
+.idea
+.build/
+build/
+coverage/
+es
+node_modules
+npm-debug.log
+NOTES.md
+test-report.xml
+jest-test-report.xml
+*.log

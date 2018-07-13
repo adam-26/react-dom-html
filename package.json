@@ -1,0 +1,21 @@
+{
+  "name": "react-dom-html",
+  "version": "0.0.0",
+  "description": "The easiest way to render Html applications using react",
+  "repository": "git@github.com:adam-26/react-dom-html.git",
+  "author": "Adam <adam-26@users.noreply.github.com>",
+  "bugs": {
+    "url": "https://github.com/adam-26/react-dom-html/issues"
+  },
+  "homepage": "https://github.com/adam-26/react-dom-html",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/react-*"],
+  "devDependencies": {
+    "wsrun": "^2.2.1",
+    "conventional-recommended-bump": "^4.0.0",
+    "glob": "^7.1.2",
+    "semver": "^5.5.0",
+    "standard-version": "^4.4.0"
+  }
+}

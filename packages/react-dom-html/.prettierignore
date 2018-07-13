@@ -1,0 +1,5 @@
+lib/
+src/__tests__
+package.json
+README.md
+*.md

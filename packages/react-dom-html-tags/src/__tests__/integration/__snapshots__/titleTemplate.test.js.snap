@@ -1,0 +1,2017 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`integration tests deeply nested component (3) client render title template Html > head | app 1`] = `"<div><div><div>content</div></div></div>"`;
+
+exports[`integration tests deeply nested component (3) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests deeply nested component (3) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) client render title template Html > head | body > app 1`] = `"<div><div><div>content</div></div></div>"`;
+
+exports[`integration tests deeply nested component (3) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests deeply nested component (3) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) client render title template withHtml > head 1`] = `"<div><div><div>content</div></div></div>"`;
+
+exports[`integration tests deeply nested component (3) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests deeply nested component (3) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) client render title template withHtml > html > head 1`] = `"<div><div><div>content</div></div></div>"`;
+
+exports[`integration tests deeply nested component (3) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests deeply nested component (3) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div><div>content</div></div></div></div></body></html>"`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests deeply nested component (3) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) client render title template Html > head | app 1`] = `"<div><div>content</div></div>"`;
+
+exports[`integration tests nested component (2) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests nested component (2) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) client render title template Html > head | body > app 1`] = `"<div><div>content</div></div>"`;
+
+exports[`integration tests nested component (2) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests nested component (2) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) client render title template withHtml > head 1`] = `"<div><div>content</div></div>"`;
+
+exports[`integration tests nested component (2) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests nested component (2) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) client render title template withHtml > html > head 1`] = `"<div><div>content</div></div>"`;
+
+exports[`integration tests nested component (2) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests nested component (2) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Root Template</title></head><body><div id=\\"app\\"><div><div>content</div></div></div></body></html>"`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests nested component (2) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) client render title template Html > head | app 1`] = `"<div>content</div>"`;
+
+exports[`integration tests root component (1) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests root component (1) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) client render title template Html > head | body > app 1`] = `"<div>content</div>"`;
+
+exports[`integration tests root component (1) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests root component (1) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) client render title template withHtml > head 1`] = `"<div>content</div>"`;
+
+exports[`integration tests root component (1) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests root component (1) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) client render title template withHtml > html > head 1`] = `"<div>content</div>"`;
+
+exports[`integration tests root component (1) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests root component (1) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template</title></head><body><div id=\\"app\\"><div>content</div></div></body></html>"`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component (1) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) client render title template Html > head | app 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings (3) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings (3) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) client render title template Html > head | body > app 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings (3) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings (3) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) client render title template withHtml > head 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings (3) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings (3) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) client render title template withHtml > html > head 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings (3) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings (3) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings (3) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template Html > head | app 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template Html > head | body > app 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template withHtml > head 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template withHtml > html > head 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template | Root Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests root component with nested siblings using a fragment (3) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template | Root Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) client render title template Html > head | app 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components (2) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests sibling components (2) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) client render title template Html > head | body > app 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components (2) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests sibling components (2) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) client render title template withHtml > head 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components (2) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components (2) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) client render title template withHtml > html > head 1`] = `"<div><div>sibling a</div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components (2) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components (2) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components (2) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template Html > head | app 1`] = `"<div><div><div>sibling a</div></div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template Html > head | body > app 1`] = `"<div><div><div>sibling a</div></div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template withHtml > head 1`] = `"<div><div><div>sibling a</div></div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template withHtml > html > head 1`] = `"<div><div><div>sibling a</div></div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, both siblings have nested component (4) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template Html > head | app 1`] = `"<div><div>sibling a</div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template Html > head | body > app 1`] = `"<div><div>sibling a</div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template withHtml > head 1`] = `"<div><div>sibling a</div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template withHtml > html > head 1`] = `"<div><div>sibling a</div><div><div>sibling b</div></div></div>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div>sibling a</div><div><div>sibling b</div></div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, bottom sibling has nested component (3) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Bottom Sibling Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template Html > head | app 1`] = `"<div><div><div>sibling a</div></div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template Html > head | app 2`] = `Object {}`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template Html > head | body > app 1`] = `"<div><div><div>sibling a</div></div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template Html > head | body > app 2`] = `Object {}`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template withHtml > head 1`] = `"<div><div><div>sibling a</div></div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template withHtml > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template withHtml > html > head 1`] = `"<div><div><div>sibling a</div></div><div>sibling b</div></div>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template withHtml > html > head 2`] = `Object {}`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) client render title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 1`] = `"<html><head><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToStaticMarkup title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template Html > head | app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template Html > head | app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template Html > head | app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template Html > head | body > app 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template Html > head | body > app 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template Html > head | body > app 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template withHtml > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template withHtml > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template withHtml > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template withHtml > html > head 1`] = `"<html><head data-reactroot=\\"\\"><title>Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template</title></head><body><div id=\\"app\\"><div><div><div>sibling a</div></div><div>sibling b</div></div></div></body></html>"`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template withHtml > html > head 2`] = `
+Object {
+  "appAttributes": Object {
+    "id": "app",
+  },
+  "appTagName": "div",
+}
+`;
+
+exports[`integration tests sibling components, top sibling has nested component (3) server renderHtmlToString title template withHtml > html > head 3`] = `
+Object {
+  "priority": Array [
+    <title>
+      Rendered Title | Rendered Template | Top Sibling Child Template | Top Sibling Template
+    </title>,
+  ],
+}
+`;
