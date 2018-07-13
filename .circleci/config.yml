@@ -54,6 +54,7 @@ jobs:
             ./cc-test-reporter before-build
 
             # Run the tests
+            yarn wsrun build --stages --exclude react-dom-html-tags
             yarn wsrun ci-test --stages --exclude react-dom-html-tags
             COVERAGE_EXIT_CODE=$?
 
