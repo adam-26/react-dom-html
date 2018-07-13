@@ -14,7 +14,7 @@ describe("react-dom-html-cli", () => {
             cliTest.exec(
                 [
                     process.execPath,
-                    CWD + "/src/react-dom-html.js",
+                    "src/react-dom-html.js",
                     "generateHtml",
                     "demo/reactDomHtmlTemplate.js",
                     "demo/htmlGenerated.html"
@@ -41,7 +41,7 @@ describe("react-dom-html-cli", () => {
             cliTest.exec(
                 [
                     process.execPath,
-                    CWD + "/src/react-dom-html.js",
+                    "src/react-dom-html.js",
                     "generateHtml",
                     "demo/reactDomHtmlApi.js",
                     "demo/apiGenerated.html"
