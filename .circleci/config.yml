@@ -122,5 +122,5 @@ jobs:
               # yarn wsrun publish --stages --exclude react-dom-html-tags
 
               # Tag the release, update package.json version and changelog, commit and push to github.
-              yarn scripts/publish.js
+              node scripts/publish.js
             fi
