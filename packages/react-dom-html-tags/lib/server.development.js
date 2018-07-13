@@ -70,7 +70,7 @@ metadata) {
 
     // Update the metadata state
 
-    metadata.setStaticServerRender(isStaticMarkup); // TODO: All INTERNAL methods should be prefixed with '_'
+    metadata.setStaticServerRender(isStaticMarkup);
 
     if (metadata._hasSerializedState()) {
         // === use serialized state to perform the render ===

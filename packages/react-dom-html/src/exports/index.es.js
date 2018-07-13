@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV === "production") {
-    module.exports = require("./index.production.min.es.js");
+    module.exports = require(__dirname + "/index.production.min.es.js");
 } else {
-    module.exports = require("./index.development.es.js");
+    module.exports = require(__dirname + "/index.development.es.js");
 }

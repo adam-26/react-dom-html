@@ -1738,7 +1738,7 @@ var HtmlMetadata = function () {
                 throw new Error(message("can not render attributes on server"));
             }
 
-            // TODO: This really needs to be tested as part of CI process - using KARMA or something similar / easier options?
+            // TODO: This really needs to be tested as part of CI process - using KARMA
 
             var attributes = this.getAttributes();
             // console.log(attributes);
