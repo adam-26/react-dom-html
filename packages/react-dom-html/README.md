@@ -13,6 +13,8 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e159e926827685bcbd1a/test_coverage)](https://codeclimate.com/github/adam-26/react-dom-html/test_coverage)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
+_Test coverage:_ *~98.5%*
+
 #### Contents
 
 *   [Introduction](introduction)
@@ -68,19 +70,32 @@ yarn add react react-dom
 
 ### Usage
 
-In the browser
+#### In the browser
+
+##### Client-side render
 
 ```js
 // browser.js
-import {render} from "react-dom-html";
+import {renderHtml} from "react-dom-html";
 import MyApplication from "./MyApplication";
 
 // if the .html page was created using react-dom-html you don't need to specify a container
 // (server-side rendering or static page generated using react-dom-html-cli)
-render(<MyApplication />);
+renderHtml(<MyApplication />);
 ```
 
-Server rendering is really easy!
+##### Hydrate a server render
+
+```js
+// browser.js
+import {hydrateHtml} from "react-dom-html";
+import MyApplication from "./MyApplication";
+
+// if the server rendered the page using react-dom-html you don't need to specify a container
+hydrateHtml(<MyApplication />);
+```
+
+#### Server rendering is really easy!
 
 ```js
 // server.js
