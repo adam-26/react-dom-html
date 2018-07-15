@@ -22,6 +22,7 @@ jobs:
           command: |
             node --version
             npm --version
+            yarn --version
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
