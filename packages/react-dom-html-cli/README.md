@@ -11,7 +11,7 @@
 
 ### Introduction
 
-Generate `.html` files for serving client application bundles.
+Generate `.html` files for serving client application bundles, sending emails or any other task that requires static Html pages to be generated.
 
 [react-dom-html](http://github.com/adam-26/react-dom-html/packages/react-dom-html) eliminates the need for any `html` boilerplate, it uses a sensible default structure that you can
 completely customize for your needs without needing to use strings.

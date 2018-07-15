@@ -58,6 +58,14 @@ yarn add react-dom-html
 
 Both `react` and `react-dom` are _peer dependencies_, so make sure you have them installed.
 
+```sh
+// npm
+npm install --save react react-dom
+
+// yarn
+yarn add react react-dom
+```
+
 ### Usage
 
 In the browser
@@ -67,8 +75,8 @@ In the browser
 import {render} from "react-dom-html";
 import MyApplication from "./MyApplication";
 
-// if the .html page was created using react-dom-html
-// you don't need to specify a container
+// if the .html page was created using react-dom-html you don't need to specify a container
+// (server-side rendering or static page generated using react-dom-html-cli)
 render(<MyApplication />);
 ```
 
@@ -86,7 +94,7 @@ const html = renderHtmlToString(<MyApplication />);
 res.send(HTML5_DOCTYPE + html);
 ```
 
-Of course, you'll probably want to customize the `html` and include your application bundle. Use the `html` option to define a `<html>` element.
+Of course, you'll probably want to customize the `html` and include your application bundle. Use the `html` option to define a `<html>` element, you can include React elements here.
 
 The `<app>` element represents the application container where the application will be rendered in the HTML output. The `<app>` element **must** be defined in the html, and it **must** be an immediate child of the `<body>` element.
 
