@@ -1,6 +1,6 @@
 # react-dom-html
 
-> The easiest way to render react-dom applications in the browser and on the server
+> The easiest way to render full-page react-dom applications in the browser and on the server
 
 > Removes the need for any HTML boilerplate
 

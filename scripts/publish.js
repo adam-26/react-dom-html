@@ -223,7 +223,8 @@ function publishWorkspacePackages(
         packagePrivate[packageName] = packageJson.private || false;
         currentPackageVersion[packageName] = packageJson.version;
         packageBump[packageName] = exec(
-            `node_modules/.bin/conventional-recommended-bump -p angular --lernaPackage=${packageName}`
+            // `node_modules/.bin/conventional-recommended-bump -p angular --lerna-package ${packageName}`
+            `node_modules/.bin/conventional-recommended-bump -p angular --tag-prefix ${packageName}/v --commit-path ${packageDirectories[packageName]}`
         ).trim();
     });
 
@@ -303,7 +304,7 @@ function publishWorkspacePackages(
                 `Updating package "${packageName}" from version "${currentVersion}" to "${nextVersion}".`
             );
             logExec(
-                `${rootStandardVersionBinary} --release-as "${nextVersion}" --skip.tag=true --skip.commit=true --no-verify${dryRunArg}`,
+                `${rootStandardVersionBinary} --release-as "${nextVersion}" --skip.tag=true --skip.commit=true --tag-prefix ${packageName}/v --no-verify${dryRunArg}`,
                 execOpts
             );
         }

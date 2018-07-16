@@ -1,6 +1,6 @@
 # react-dom-html
 
-> The easiest way to render html applications using react
+> The easiest way to render full-page react-dom applications
 >
 > It's react-dom, without the need for any html boilerplate
 >
