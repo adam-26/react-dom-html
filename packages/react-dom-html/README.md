@@ -20,7 +20,9 @@ _Test coverage:_ *~98.5%*
 *   [Introduction](introduction)
 *   [Install](install)
 *   [Usage](usage)
-    *   [Generating html for client apps](Generating_html_for_client_apps)
+    *   [Browser rendering](Browser)
+    *   [Server rendering](Server)
+    *   [Generating static html](Generating_static_Html)
     *   [Advanced server-side rendering](Advanced_server-side_rendering)
 *   [API](api)
 *   [Contributing](contributing)
@@ -70,21 +72,24 @@ yarn add react react-dom
 
 ### Usage
 
-#### In the browser
+#### Browser
 
 ##### Client-side render
+
+Use when [react-dom-html-cli](https://github.com/adam-26/react-dom-html/blob/master/packages/react-dom-html-cli/README.md),
+`renderHtmlToStaticMarkup` or `renderHtmlToStaticNodeStream` is used to serve the application.
 
 ```js
 // browser.js
 import {renderHtml} from "react-dom-html";
 import MyApplication from "./MyApplication";
 
-// if the .html page was created using react-dom-html you don't need to specify a container
-// (server-side rendering or static page generated using react-dom-html-cli)
 renderHtml(<MyApplication />);
 ```
 
 ##### Hydrate a server render
+
+Use when `renderHtmlToString` or `renderHtmlToNodeStream` is used to serve the application.
 
 ```js
 // browser.js
@@ -95,7 +100,11 @@ import MyApplication from "./MyApplication";
 hydrateHtml(<MyApplication />);
 ```
 
-#### Server rendering is really easy!
+#### Server
+
+Server rendering is really easy!
+
+##### Render to string
 
 ```js
 // server.js
@@ -108,6 +117,20 @@ const html = renderHtmlToString(<MyApplication />);
 // Using expressjs or another http framework
 res.send(HTML5_DOCTYPE + html);
 ```
+
+##### Render using node streams
+
+```js
+import {renderHtmlToNodeStream, HTML5_DOCTYPE} from "react-dom-html/server";
+import MyApplication from "./MyApplication";
+
+const stream = renderHtmlToNodeStream(<App />);
+
+res.write(HTML5_DOCTYPE);
+return stream.pipe(res);
+```
+
+##### Customize server rendered Html
 
 Of course, you'll probably want to customize the `html` and include your application bundle. Use the `html` option to define a `<html>` element, you can include React elements here.
 
@@ -155,7 +178,7 @@ const html = renderHtmlToString(<MyApplication />, {
 res.send(HTML5_DOCTYPE + html);
 ```
 
-#### Generating html for client apps
+#### Generating static Html
 
 If you're not rendering your application on the server, you can still take advantage of `react-dom-html` to generate the `.html` page used to serve your application in the browser.
 
@@ -205,7 +228,9 @@ const html = renderHtmlToString(sheet.collectStyles(<MyApplication />), {
 });
 ```
 
-_NOTE: This can not be done rendering to a stream, as streams **must** render in page order (from top to bottom)_
+_NOTE: Server-side stream rendering **must** render sequentially (from top to bottom).
+When using the `html` callback option with stream rendering, any data or markup generated
+during application render must be injected **after** the `<app />` tag._
 
 ### API
 
