@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.2"></a>
+## [1.3.2](https://github.com/adam-26/react-dom-html/compare/react-dom-html/v1.3.1...1.3.2) (2018-07-16)
+
+
+### Bug Fixes
+
+* **docs:** Improve react-dom-html Readme ([06e4a8d](https://github.com/adam-26/react-dom-html/commit/06e4a8d))
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/adam-26/react-dom-html/compare/react-dom-html/v1.3.0...1.3.1) (2018-07-16)
 
