@@ -50,7 +50,7 @@ function renderString(
     const headTag =
         typeof headEl === "string"
             ? headEl
-            : (isStaticMarkup || !headIsReactRoot)
+            : isStaticMarkup || !headIsReactRoot
                 ? renderToStaticMarkup(headEl)
                 : renderToString(headEl);
     const beforeAppContainerMarkup = beforeAppContainerElement

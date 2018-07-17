@@ -49,7 +49,10 @@ export default class HtmlReadable extends Readable {
 
         if (this._beforeAppContainerElement) {
             readers.push(callback =>
-                this._readStaticNodeStream(resolveOptionalElement(this._beforeAppContainerElement), callback)
+                this._readStaticNodeStream(
+                    resolveOptionalElement(this._beforeAppContainerElement),
+                    callback
+                )
             );
         }
 
@@ -61,7 +64,10 @@ export default class HtmlReadable extends Readable {
 
         if (this._afterAppContainerElement) {
             readers.push(callback =>
-                this._readStaticNodeStream(resolveOptionalElement(this._afterAppContainerElement), callback)
+                this._readStaticNodeStream(
+                    resolveOptionalElement(this._afterAppContainerElement),
+                    callback
+                )
             );
         }
 
