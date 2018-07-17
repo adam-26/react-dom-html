@@ -102,7 +102,7 @@ describe("HtmlReadable", () => {
             });
         });
 
-        test("render using low-level options with string head element", done => {
+        test("render using options with string head element", done => {
             const TestComponent = createListComponent();
             const readable = new HtmlReadable(<TestComponent />, false, {
                 htmlElement: <html />,
@@ -127,6 +127,58 @@ describe("HtmlReadable", () => {
             readable.on("end", () => {
                 expect(error).toBe(null);
                 expect(readLength > 0).toBe(true);
+                done();
+            });
+        });
+
+        test("render using options using callback functions", done => {
+            const TestComponent = createListComponent();
+            const readable = new HtmlReadable(<div>app</div>, false, {
+                htmlElement: () => <html lang="en" />,
+                bodyElement: () => <body className="page" />,
+                headElement: () => <head><title>Title</title></head>,
+                appContainerElement: () => <div id="app" />,
+                beforeAppContainerElement: () => <noscript>JavaScript required</noscript>,
+                afterAppContainerElement: () => <div>After</div>
+            });
+
+            let markup = "";
+            let error = null;
+            readable.on("data", chunk => {
+                markup += chunk;
+            });
+
+            readable.on("error", err => {
+                error = err;
+            });
+
+            readable.on("end", () => {
+                expect(error).toBe(null);
+                expect(markup).toBe("<html lang=\"en\"><head><title>Title</title></head><body class=\"page\"><noscript>JavaScript required</noscript><div id=\"app\"><div data-reactroot=\"\">app</div></div><div>After</div></body></html>");
+                done();
+            });
+        });
+
+        test("render using options with head as react-root", done => {
+            const TestComponent = createListComponent();
+            const readable = new HtmlReadable(<div>app</div>, false, {
+                headElement: <head><title>Title</title></head>,
+                headIsReactRoot: true
+            });
+
+            let markup = "";
+            let error = null;
+            readable.on("data", chunk => {
+                markup += chunk;
+            });
+
+            readable.on("error", err => {
+                error = err;
+            });
+
+            readable.on("end", () => {
+                expect(error).toBe(null);
+                expect(markup).toBe("<html><head data-reactroot=\"\"><title>Title</title></head><body><div id=\"app\"><div data-reactroot=\"\">app</div></div></body></html>");
                 done();
             });
         });

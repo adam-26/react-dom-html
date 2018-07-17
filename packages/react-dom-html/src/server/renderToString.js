@@ -2,7 +2,11 @@
 import React from "react";
 import {renderToStaticMarkup, renderToString} from "react-dom/server";
 import mapOptionsToState from "./mapOptionsToState";
-import {renderStaticOpeningTagFromElement} from "./serverUtil";
+import {
+    resolveAndRenderStaticOpeningTag,
+    renderStaticOpeningTagFromElement,
+    resolveOptionalElement
+} from "./serverUtil";
 import type {ElementType} from "../flowTypes";
 
 export function renderHtmlToString(element: ElementType = null, options?: Object = {}): string {
@@ -32,28 +36,31 @@ function renderString(
         headElement,
         appContainerElement,
         beforeAppContainerElement,
-        afterAppContainerElement
+        afterAppContainerElement,
+        headIsReactRoot
     } = mapOptionsToState(element, options);
 
-    const openingHtmlTag = renderStaticOpeningTagFromElement(htmlElement);
-    const openingBodyTag = renderStaticOpeningTagFromElement(bodyElement);
-    const openingAppTag = renderStaticOpeningTagFromElement(appContainerElement);
+    const openingHtmlTag = resolveAndRenderStaticOpeningTag(htmlElement);
+    const openingBodyTag = resolveAndRenderStaticOpeningTag(bodyElement);
+    const appContainerEl = resolveOptionalElement(appContainerElement);
+    const openingAppTag = renderStaticOpeningTagFromElement(appContainerEl);
 
     // The head may be assigned as a pre-rendered string
+    const headEl = resolveOptionalElement(headElement);
     const headTag =
-        typeof headElement === "string"
-            ? headElement
-            : isStaticMarkup
-                ? renderToStaticMarkup(headElement)
-                : renderToString(headElement);
+        typeof headEl === "string"
+            ? headEl
+            : (isStaticMarkup || !headIsReactRoot)
+                ? renderToStaticMarkup(headEl)
+                : renderToString(headEl);
     const beforeAppContainerMarkup = beforeAppContainerElement
-        ? renderToStaticMarkup(beforeAppContainerElement)
+        ? renderToStaticMarkup(resolveOptionalElement(beforeAppContainerElement))
         : "";
     const afterAppContainerMarkup = afterAppContainerElement
-        ? renderToStaticMarkup(afterAppContainerElement)
+        ? renderToStaticMarkup(resolveOptionalElement(afterAppContainerElement))
         : "";
 
     return `${openingHtmlTag}${headTag}${openingBodyTag}${beforeAppContainerMarkup}${openingAppTag}${appMarkup}</${
-        appContainerElement.type
+        appContainerEl.type
     }>${afterAppContainerMarkup}</body></html>`;
 }

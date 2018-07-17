@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/adam-26/react-dom-html/issues"
   },
-  "homepage": "https://github.com/adam-26/react-dom-html/packages/react-dom-html-cli",
+  "homepage": "https://github.com/adam-26/react-dom-html/tree/master/packages/react-dom-html-cli",
   "license": "MIT",
   "bin": {
     "react-dom-html": "./src/react-dom-html.js"

@@ -42,7 +42,7 @@ describe("server", () => {
                     toHtml(render(), (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><div id="app"></div></body></html>`
+                            `<html><head></head><body><div id="app"></div></body></html>`
                         );
                         done();
                     });
@@ -52,7 +52,7 @@ describe("server", () => {
                     toHtml(render(<div>content</div>), (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -72,7 +72,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html lang="en"><head${dataReactRoot}></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html lang="en"><head></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -95,7 +95,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}><title>Page Title</title></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head><title>Page Title</title></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -115,7 +115,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body class="appBody"><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head></head><body class="appBody"><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -136,7 +136,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><span id="notDefault"><div${dataReactRoot}>content</div></span></body></html>`
+                            `<html><head></head><body><span id="notDefault"><div${dataReactRoot}>content</div></span></body></html>`
                         );
                         done();
                     });
@@ -157,7 +157,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><div>before</div><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head></head><body><div>before</div><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -178,7 +178,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><div id="app"><div${dataReactRoot}>content</div></div><div>after</div></body></html>`
+                            `<html><head></head><body><div id="app"><div${dataReactRoot}>content</div></div><div>after</div></body></html>`
                         );
                         done();
                     });
@@ -204,7 +204,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html lang="en"><head${dataReactRoot}><title>Page Title</title></head><body class="appBody"><div>before</div><span id="notDefault"><div${dataReactRoot}>content</div></span><div>after</div></body></html>`
+                            `<html lang="en"><head><title>Page Title</title></head><body class="appBody"><div>before</div><span id="notDefault"><div${dataReactRoot}>content</div></span><div>after</div></body></html>`
                         );
                         done();
                     });
@@ -226,7 +226,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html lang="en"><head${dataReactRoot}></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html lang="en"><head></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -246,7 +246,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}><title>Page Title</title></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head><title>Page Title</title></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -262,7 +262,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body class="appBody"><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head></head><body class="appBody"><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -278,7 +278,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><span id="notDefault"><div${dataReactRoot}>content</div></span></body></html>`
+                            `<html><head></head><body><span id="notDefault"><div${dataReactRoot}>content</div></span></body></html>`
                         );
                         done();
                     });
@@ -294,7 +294,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><div>before</div><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
+                            `<html><head></head><body><div>before</div><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });
@@ -310,7 +310,7 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html><head${dataReactRoot}></head><body><div id="app"><div${dataReactRoot}>content</div></div><div>after</div></body></html>`
+                            `<html><head></head><body><div id="app"><div${dataReactRoot}>content</div></div><div>after</div></body></html>`
                         );
                         done();
                     });
@@ -335,7 +335,53 @@ describe("server", () => {
                     toHtml(rendered, (err, html) => {
                         expect(err).toBeFalsy();
                         expect(html).toBe(
-                            `<html lang="en"><head${dataReactRoot}><title>Page Title</title></head><body class="appBody"><div>before</div><span id="notDefault"><div${dataReactRoot}>content</div></span><div>after</div></body></html>`
+                            `<html lang="en"><head><title>Page Title</title></head><body class="appBody"><div>before</div><span id="notDefault"><div${dataReactRoot}>content</div></span><div>after</div></body></html>`
+                        );
+                        done();
+                    });
+                });
+
+                test("should render htmlElements options with individual callbacks", done => {
+                    const rendered = render(<div>content</div>, {
+                        htmlElements: {
+                            htmlElement: () => <html lang="en" />,
+                            headElement: () => (
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                            ),
+                            bodyElement: () => <body className="appBody" />,
+                            appContainerElement: () => <span id="notDefault" />,
+                            beforeAppContainerElement: () => <div>before</div>,
+                            afterAppContainerElement: () => <div>after</div>
+                        }
+                    });
+
+                    toHtml(rendered, (err, html) => {
+                        expect(err).toBeFalsy();
+                        expect(html).toBe(
+                            `<html lang="en"><head><title>Page Title</title></head><body class="appBody"><div>before</div><span id="notDefault"><div${dataReactRoot}>content</div></span><div>after</div></body></html>`
+                        );
+                        done();
+                    });
+                });
+
+                test("should render head as react-root", done => {
+                    const rendered = render(<div>content</div>, {
+                        htmlElements: {
+                            headElement: (
+                                <head>
+                                    <title>Page Title</title>
+                                </head>
+                            ),
+                            headIsReactRoot: true
+                        }
+                    });
+
+                    toHtml(rendered, (err, html) => {
+                        expect(err).toBeFalsy();
+                        expect(html).toBe(
+                            `<html><head${dataReactRoot}><title>Page Title</title></head><body><div id="app"><div${dataReactRoot}>content</div></div></body></html>`
                         );
                         done();
                     });

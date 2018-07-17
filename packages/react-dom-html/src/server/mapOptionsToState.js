@@ -122,7 +122,8 @@ export function assignOptions(defaultOptions, options) {
 const defaultElements = {
     htmlElement: createElement(HTML_TAG),
     headElement: createElement(HEAD_TAG),
-    bodyElement: createElement(BODY_TAG)
+    bodyElement: createElement(BODY_TAG),
+    headIsReactRoot: false
 };
 
 export default function mapOptionsToState(element, options) {
@@ -130,8 +131,8 @@ export default function mapOptionsToState(element, options) {
         // html element options
         html,
         appContainerTagName,
-        // undocumented options
         htmlElements,
+        // undocumented options
         allowAppContainerChildren,
         // other options
         ...otherOpts
@@ -175,7 +176,8 @@ export default function mapOptionsToState(element, options) {
             headElement,
             appContainerElement,
             beforeAppContainerElement,
-            afterAppContainerElement
+            afterAppContainerElement,
+            headIsReactRoot
         } =
             typeof htmlElements === "function" ? htmlElements() : htmlElements;
 
@@ -184,6 +186,7 @@ export default function mapOptionsToState(element, options) {
             htmlElement,
             bodyElement,
             headElement,
+            headIsReactRoot,
             beforeAppContainerElement,
             afterAppContainerElement,
             appContainerElement:

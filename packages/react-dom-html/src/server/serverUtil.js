@@ -31,6 +31,10 @@ export function renderStaticOpeningTagFromElement(element) {
     return markup.substring(0, markup.length - (element.type.length + 3));
 }
 
+export function resolveAndRenderStaticOpeningTag(element) {
+    return renderStaticOpeningTagFromElement(resolveOptionalElement(element));
+}
+
 export function createAppContainerElement(
     rootElement,
     appContainerTagName: string,
