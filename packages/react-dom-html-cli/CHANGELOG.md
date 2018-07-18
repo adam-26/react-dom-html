@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/adam-26/react-dom-html/compare/react-dom-html-cli/v1.2.0...1.3.0) (2018-07-18)
+
+
+### Bug Fixes
+
+* **build:** codeClimate ([402365e](https://github.com/adam-26/react-dom-html/commit/402365e))
+* **build:** Codeclimate analysis ([f54bb35](https://github.com/adam-26/react-dom-html/commit/f54bb35))
+* **build:** eslint ([6c41fb9](https://github.com/adam-26/react-dom-html/commit/6c41fb9))
+* **build:** Incorrect `bump` version numbers ([46b6d0a](https://github.com/adam-26/react-dom-html/commit/46b6d0a))
+* **build:** lint ([4df32a2](https://github.com/adam-26/react-dom-html/commit/4df32a2))
+* **docs:** Improve react-dom-html Readme ([06e4a8d](https://github.com/adam-26/react-dom-html/commit/06e4a8d))
+* **docs:** react-dom-html README ([0584bb7](https://github.com/adam-26/react-dom-html/commit/0584bb7))
+* **docs:** update README ([f3d96ec](https://github.com/adam-26/react-dom-html/commit/f3d96ec))
+
+
+### Features
+
+* **code:** htmlElements option ([eeb912e](https://github.com/adam-26/react-dom-html/commit/eeb912e))
+* **code:** htmlElements option ([4766687](https://github.com/adam-26/react-dom-html/commit/4766687))
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2018-07-15)
 
