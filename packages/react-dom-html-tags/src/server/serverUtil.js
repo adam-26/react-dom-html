@@ -16,6 +16,7 @@ export function getAppElement(htmlProvider, element) {
     return isValidElement(element) ? element : htmlProvider;
 }
 
+// TODO: Remove this func... and all usages of it - its now done in the react-dom-html pkg
 // Use callback to create react elements after the main application is rendered
 export function resolveOptionalElement(element) {
     return !isValidElement(element) && typeof element === "function" ? element() : element;
@@ -54,6 +55,7 @@ export function getRenderOptions(
             htmlElement: createElement("html", htmlAttributes),
             bodyElement: createElement("body", bodyAttributes),
             headElement: head,
+            headIsReactRoot: true,
             appContainerElement: createElement(appTagName, appAttributes),
             beforeAppContainerElement: resolveOptionalElement(beforeAppContainer),
             afterAppContainerElement: resolveOptionalElement(afterAppContainer)
@@ -73,6 +75,7 @@ export function getRenderOptions(
         htmlElement: createElement("html", htmlAttributes),
         bodyElement: createElement("body", bodyAttributes),
         headElement: createElement("head", headAttributes, createHeadChildren(element, metadata)),
+        headIsReactRoot: true,
         appContainerElement: createElement(appTagName, appAttributes),
         beforeAppContainerElement: resolveOptionalElement(beforeAppContainer),
         afterAppContainerElement: resolveOptionalElement(afterAppContainer)

@@ -2,7 +2,12 @@
 import {Readable} from "stream";
 import {renderToNodeStream, renderToStaticNodeStream} from "react-dom/server";
 import mapOptionsToState from "./mapOptionsToState";
-import {createAppContainerElement, renderStaticOpeningTagFromElement} from "./serverUtil";
+import {
+    createAppContainerElement,
+    renderStaticOpeningTagFromElement,
+    resolveAndRenderStaticOpeningTag,
+    resolveOptionalElement
+} from "./serverUtil";
 import type {ElementType} from "../flowTypes";
 
 export default class HtmlReadable extends Readable {
@@ -14,6 +19,7 @@ export default class HtmlReadable extends Readable {
             appContainerElement,
             beforeAppContainerElement,
             afterAppContainerElement,
+            headIsReactRoot,
             ...streamOptions
         } = mapOptionsToState(element, options);
 
@@ -23,10 +29,12 @@ export default class HtmlReadable extends Readable {
         this._rootElement = element;
         this._htmlElement = htmlElement;
         this._headElement = headElement;
+        this._headIsReactRoot = headIsReactRoot;
         this._bodyElement = bodyElement;
         this._beforeAppContainerElement = beforeAppContainerElement;
         this._afterAppContainerElement = afterAppContainerElement;
         this._appContainerElement = appContainerElement;
+        this._appContainerElementType = null;
 
         // All other props must be set before invoking _getReaders()
         this._readers = this._getReaders();
@@ -41,7 +49,10 @@ export default class HtmlReadable extends Readable {
 
         if (this._beforeAppContainerElement) {
             readers.push(callback =>
-                this._readStaticNodeStream(this._beforeAppContainerElement, callback)
+                this._readStaticNodeStream(
+                    resolveOptionalElement(this._beforeAppContainerElement),
+                    callback
+                )
             );
         }
 
@@ -53,7 +64,10 @@ export default class HtmlReadable extends Readable {
 
         if (this._afterAppContainerElement) {
             readers.push(callback =>
-                this._readStaticNodeStream(this._afterAppContainerElement, callback)
+                this._readStaticNodeStream(
+                    resolveOptionalElement(this._afterAppContainerElement),
+                    callback
+                )
             );
         }
 
@@ -90,7 +104,7 @@ export default class HtmlReadable extends Readable {
     }
 
     _readHtmlOpenTags(callback) {
-        this._pushMarkup(renderStaticOpeningTagFromElement(this._htmlElement), callback);
+        this._pushMarkup(resolveAndRenderStaticOpeningTag(this._htmlElement), callback);
     }
 
     _readHead(callback) {
@@ -100,23 +114,26 @@ export default class HtmlReadable extends Readable {
         }
 
         // Document head(s) can be large, use a stream to render the head
-        if (this._isStaticMarkup) {
-            return this._readStaticNodeStream(this._headElement, callback);
+        const headEl = resolveOptionalElement(this._headElement);
+        if (this._isStaticMarkup || !this._headIsReactRoot) {
+            return this._readStaticNodeStream(headEl, callback);
         }
 
-        this._readNodeStream(this._headElement, callback);
+        this._readNodeStream(headEl, callback);
     }
 
     _readBodyOpenTag(callback) {
-        this._pushMarkup(renderStaticOpeningTagFromElement(this._bodyElement), callback);
+        this._pushMarkup(resolveAndRenderStaticOpeningTag(this._bodyElement), callback);
     }
 
     _readAppOpenTag(callback) {
-        this._pushMarkup(renderStaticOpeningTagFromElement(this._appContainerElement), callback);
+        const appContainerEl = resolveOptionalElement(this._appContainerElement);
+        this._appContainerElementType = appContainerEl.type;
+        this._pushMarkup(renderStaticOpeningTagFromElement(appContainerEl), callback);
     }
 
     _readAppCloseTag(callback) {
-        this._pushMarkup(`</${this._appContainerElement.type}>`, callback);
+        this._pushMarkup(`</${this._appContainerElementType}>`, callback);
     }
 
     _readHtmlApp(callback) {
