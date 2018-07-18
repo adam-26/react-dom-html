@@ -32,7 +32,7 @@ _Test coverage:_ *~98.5%*
 
 `react-dom-html` is a thin wrapper around the client and server render methods of [react-dom]() that takes care of all the `html` boilerplate.
 
-If you want to define HTML metadata in your react application (similar to [react-helmet](https://github.com/nfl/react-helmet)), use [react-dom-html-tags](https://github.com/adam-26/react-dom-html/tree/master/packages/react-dom-html-tags).
+If you want to define HTML metadata in your react application (similar to [react-helmet](https://github.com/nfl/react-helmet)), you can use [react-dom-html-tags](https://github.com/adam-26/react-dom-html/tree/master/packages/react-dom-html-tags).
 
 **Browser** methods supported:
 
@@ -76,8 +76,9 @@ yarn add react react-dom
 
 ##### Client-side render
 
-Use when [react-dom-html-cli](https://github.com/adam-26/react-dom-html/blob/master/packages/react-dom-html-cli/README.md),
-`renderHtmlToStaticMarkup` or `renderHtmlToStaticNodeStream` is used to serve the application.
+Use when `renderHtmlToStaticMarkup`, `renderHtmlToStaticNodeStream` or
+[react-dom-html-cli](https://github.com/adam-26/react-dom-html/blob/master/packages/react-dom-html-cli/README.md)
+is used to serve the application.
 
 ```js
 // browser.js
@@ -101,8 +102,6 @@ hydrateHtml(<MyApplication />);
 ```
 
 ### Server
-
-Server rendering is really easy!
 
 ##### Render to string
 
@@ -132,7 +131,7 @@ return stream.pipe(res);
 
 #### Server render options
 
-Of course, you'll probably want to customize the `html` and include your application bundle.
+Of course, you'll probably want to customize the Html and include your application bundle.
 
 ##### html: The simple option
 
